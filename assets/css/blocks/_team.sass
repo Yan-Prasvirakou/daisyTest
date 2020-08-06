@@ -1,0 +1,184 @@
+.team
+	&_grey
+		background: #f2f2f2
+		padding-bottom: 30px
+	&__title
+		+title-h2
+		&_red	
+			color: $red
+	&__people
+		margin-bottom: 75px
+		&__block
+			padding-top: 50px
+			&__img
+				margin-bottom: 25px
+			&__name
+				+rb($team, 20px)
+				&_red
+					+rb($red, 20px)
+			&__work
+				+rm($team, 14px)
+				margin-bottom: 5px
+			&__logos
+				width: 150px
+				&__logo
+					width: 25px
+					height: 25px
+					text-align: center
+					border-radius: 50%
+					background: $team
+					font-size: 14px
+					padding-top: 2px
+					margin: 0 5px
+					a
+						display: block
+						height: 100%
+						color: #f2f2f2
+	&__qoutes
+		padding-top: 80px
+		margin-bottom: 130px
+		&__q-polygon
+			position: absolute
+			background: $red
+			margin: 0 auto
+			&:after, &:before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				border-left: 4px solid $lred
+				border-right: 4px solid $lred
+				background: $red
+				transform: rotate(60deg)
+			&:after
+				transform: rotate(-60deg)
+			&__patch-top, &__patch-bottom
+				width: 0
+				height: 0
+				border-width: 3px
+				border-style: solid
+				border-color: transparent transparent $lred transparent
+				position: absolute
+				z-index: 10
+				top: -21px
+				left: 30px
+				transform: rotate(-30deg)
+			&__patch-bottom
+				transform: rotate(160deg)
+				top: 55px
+				left: 35px
+			&__content
+				width: 70px
+				height: 40px
+				border-left: 4px solid $lred
+				border-right: 4px solid $lred
+				font-size: 35px
+				color: #fff
+				padding-top: 2px
+				position: relative
+				z-index: 5
+	&__text
+		padding-top: 60px
+		+rl($text, 14px)
+		margin-bottom: 50px
+		@media screen and (max-width: 575px)
+			padding: 0 25%
+			margin-bottom: 0
+		@media screen and (max-width: 373px)
+			padding: 0 15%
+	&__img
+		margin-bottom: 50px
+		@media screen and (max-width: 575px)
+			margin-bottom: 10px
+	&__person
+		padding-top: 60px
+		margin-bottom: 50px		
+		@media screen and (max-width: 575px)
+			margin-bottom: 0
+			padding-top: 10px
+		&__name
+			+rb($text, 20px)
+			&_red
+				+rb($red, 20px)
+		&__work
+			+rm($text, 14px)
+	&__arrows
+		&_left, &_right
+			width: 30px
+			height: 30px
+			background: #fff
+			border: 1px solid $red
+			color: $red
+			border-radius: 50%
+			text-align: center
+			padding-top: 2px
+			margin: 0 10px 20px
+		&_left
+			transform: rotate(-135deg)
+		&_right
+			transform: rotate(45deg)
+	&__adress
+		padding-top: 80px
+		margin-bottom: 50px
+		&__polygon
+			position: absolute
+			background: $red
+			margin: 0 auto
+			&:after, &:before
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				border-left: 6px solid $lred
+				border-right: 6px solid $lred
+				background: $red
+				transform: rotate(60deg)
+			&:after
+				transform: rotate(-60deg)
+			&__content
+				width: 200px
+				height: 115px
+				border-left: 6px solid $lred
+				border-right: 6px solid $lred
+				color: #fff
+				padding-top: 2px
+				position: relative
+				z-index: 5
+				padding: 0 15px
+				&__patch-top, &__patch-bottom
+					width: 0
+					height: 0
+					border-width: 4px
+					border-style: solid
+					border-color: transparent transparent $lred transparent
+					position: absolute
+					z-index: 10
+					top: -57px
+					left: 86px
+					transform: rotate(-30deg)
+				&__patch-bottom
+					transform: rotate(158deg)
+					top: 165px
+					left: 93px
+				h4
+					+rb(#fff, 24px)
+					margin-bottom: 15px
+				address
+					font-size: 14px
+
+
+
+				
+
+
+
+
+	
+
+
+
+			

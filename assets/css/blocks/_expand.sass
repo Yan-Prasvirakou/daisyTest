@@ -1,0 +1,50 @@
+.expand
+	background: url('../img/expand_bg.jpg') center 5% no-repeat
+	background-size: cover
+	// @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)
+	// 	background: url(../img/header_bg@2x.jpg) center 5% no-repeat fixed / cover
+	// @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-moz-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3), only screen and (min-device-pixel-ratio: 3)
+	// 	background: url(../img/header_bg@3x.jpg) center 5% no-repeat fixed / cover
+	padding-top: 210px
+	padding-bottom: 30px
+	position: relative
+	&__title
+		text-transform: uppercase
+		+rb(#fff, 36px)
+		text-align: center
+		margin-bottom: 45px
+		@media screen and (max-width: 768px)
+			+rb(#fff, 24px)
+		@media screen and (max-width: 420px)
+			+rb(#fff, 16px)
+		&-red
+			color: $red
+	&__btn
+		border: 2px solid $red
+		+rl($red, 20px)
+		margin: auto
+		margin-bottom: 145px
+		padding: 10px 55px
+		@media screen and (max-width: 768px)
+			margin-bottom: 80px
+		&:focus, &:active, &:active:focus, 
+			outline: none
+			box-shadow: none
+		&:hover
+			color: #fff
+			background: $red
+	&__img
+		position: absolute
+		height: 280px
+		width: 145px
+		top: 310px
+		left: 59%
+		@media screen and (max-width: 955px)
+			left: 62%
+		@media screen and (max-width: 768px)
+			left: 64%
+			top: 295px
+		@media screen and (max-width: 620px)
+			left: 68%
+		@media screen and (max-width: 480px)			
+			display: none

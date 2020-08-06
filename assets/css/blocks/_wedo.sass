@@ -1,0 +1,77 @@
+.wedo
+	&_grey
+		background: #f2f2f2
+		padding-bottom: 1px
+	&__title
+		+title-h2
+		&_red
+			color: $red
+	&__desc
+		padding-top: 130px
+		@media screen and (max-width: 991px)
+			padding-top: 50px
+		&_ptmb50
+			padding-top: 50px
+			margin-bottom: 50px
+		&_mb100
+			margin-bottom: 100px
+			@media screen and (max-width: 991px)
+				margin-bottom: 50px
+		&_mb150
+			margin-bottom: 150px
+			@media screen and (max-width: 991px)
+				margin-bottom: 50px
+		&__headline
+			+rb($text, 24px)
+			border-left: 10px solid $red
+			text-transform: uppercase
+			padding-left: 15px
+			line-height: 32px
+			@media screen and (max-width: 767px)
+				+rb($text, 18px)
+			&_bd-right
+				border-right: 10px solid $red
+				border-left: none
+				padding-right: 15px
+		&__text
+			+rl($text, 14px)
+			line-height: 26px
+			padding-right: 55px
+			margin-bottom: 35px
+			@media screen and (max-width: 1199px)
+				padding-right: 20px
+			@media screen and (max-width: 767px)
+				padding-right: 0
+				+rl($text, 12px)
+				line-height: 20px
+				margin-bottom: 15px
+			&_pl
+				padding-right: 0
+				padding-left: 55px
+				@media screen and (max-width: 1199px)
+					padding-left: 20px
+				@media screen and (max-width: 767px)
+					padding-left: 0
+		&__btn
+			background: $red
+			+rl(#fff, 18px)
+			padding: 5px 30px
+			&:focus, &:active, &:active:focus
+				outline: none
+				box-shadow: none
+			&:hover
+				background: $lred
+				color: #fff
+			@media screen and (max-width: 767px)
+				margin-left: calc(50% - 82px)
+			&_right
+				margin-left: calc(99% - 160px)
+		&__img
+			width: 100%
+			@media screen and (max-width: 991px)
+				margin-top: 40px
+			@media screen and (max-width: 767px)
+				margin-top: 0
+				margin-bottom: 25px
+	&__arrow
+		margin-bottom: 30px

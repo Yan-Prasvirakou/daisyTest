@@ -1,0 +1,99 @@
+.recieve
+	padding-bottom: 30px
+	&__title
+		+title-h2
+		&_red
+			color: $red
+	&__subtitle
+		+rl(#bbb, 18px)
+		@media screen and (max-width: 768px)
+			+rl(#bbb, 14px)
+	&__polygons
+		margin-top: 40px
+		&__col
+			cursor: pointer
+			padding-top: 50px
+			transition: .4s
+			&:hover 
+				box-shadow: 0px 3px 15px 1px rgba(0,0,0,0.5)
+			&:hover &__polygon
+				background: transparent
+				&:before, &:after
+					background: transparent
+					border-left: 4px solid $red
+					border-right: 4px solid $red
+				&__content
+					border-left: 4px solid $red
+					border-right: 4px solid $red
+					&__patch-top, &__patch-bottom
+						border-color: transparent transparent $red transparent
+					&__icon
+						color: $red
+			&:hover &__title
+				color: $red	
+			&:hover &__text
+				color: $text
+			&__polygon
+				height: 60px
+				position: absolute
+				left: calc(50% - 52px)
+				background: $red
+				&:after, &:before
+					content: ''
+					position: absolute
+					width: 100%
+					height: 100%
+					border-left: 4px solid #fe8682
+					border-right: 4px solid #fe8682
+					background: $red
+					transform: rotate(60deg)
+				&:after
+					transform: rotate(-60deg)
+				&__content
+					width: 104px
+					border-left: 4px solid #fe8682
+					border-right: 4px solid #fe8682
+					z-index: 8
+					&__patch-top, &__patch-bottom
+						width: 0
+						height: 0
+						border-width: 4px
+						border-style: solid
+						border-color: transparent transparent $lred transparent
+						position: absolute
+						z-index: 10
+						top: -31px
+						left: 43px
+						transform: rotate(-30deg)
+					&__patch-bottom
+						transform: rotate(160deg)
+						top: 84px
+						left: 50px
+					&__icon
+						font-size: 40px
+						color: #fff
+						position: relative
+						transition: inherit
+			&__title
+				text-align: center
+				text-transform: uppercase
+				+rm($text, 20px)
+				transition: inherit
+				margin-top: 105px
+				@media screen and (max-width: 768px)
+					+rm($text, 16px)
+			hr
+				width: 60px
+				border: 0.5px solid $text
+				margin: auto
+				margin-bottom: 25px
+			&__text
+				text-align: center
+				margin-bottom: 25px
+				+rl(#ccc, 14px)
+				transition: inherit
+				@media screen and (max-width: 768px)
+					+rl(#ccc, 12px)
+
+			
+			

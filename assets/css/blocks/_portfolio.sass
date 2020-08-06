@@ -1,0 +1,162 @@
+.portfolio
+	position: relative
+	&__title
+		+title-h2
+	&__menu
+		margin-bottom: 30px
+		&__list
+			list-style-type: none
+			padding: 20px 0
+			border-top: 1px solid #ddd
+			border-bottom: 1px solid #ddd
+			@media screen and (max-width: 767px)
+				padding: 10px 0
+			&__item
+				display: inline-block
+				text-transform: uppercase
+				&:nth-child(even)
+					margin: 0 7px
+					font-weight: 500
+					color: $text
+				@media screen and (max-width: 400px)
+					font-size: 10px
+					font-weight: 300
+				a
+					+rm($red, 16px)
+					transition: .5s
+					@media screen and (max-width: 767px)
+						+rm($lred, 12px)
+					@media screen and (max-width: 400px)
+						+rm($lred, 9px)
+					&:hover
+						text-decoration: none
+						animation: heart 1s cubic-bezier(1,0.5,0.3,0.5)
+						@keyframes heart
+							30%
+								color: $text
+	&__images
+		margin-bottom: 55px
+		&__img
+			height: 210px
+			border: 5px solid #fff
+			background: #000
+			position: relative
+			padding-top: 20px
+			overflow: hidden
+			z-index: 2
+			@media screen and (max-width: 991px)
+				height: 160px
+			@media screen and (max-width: 440px)
+				height: 130px
+			&:hover
+				text-decoration: none
+			&:before
+				content: ''
+				width: 170%
+				height: 170%
+				background: $red
+				position: absolute
+				left: -10%	
+				top: -10%
+				opacity: 0
+				transition: .3s
+				z-index: 3
+			&:hover:before
+				opacity: .7
+			&:hover &__title, &:hover &__plus
+				display: block
+				opacity: 1
+			&:nth-child(1)
+				background: url('../img/portfolio1.png') 0 -70px no-repeat
+				background-size: cover
+				@media screen and (max-width: 1199px)
+					background-position: 0 0
+			&:nth-child(2)
+				background: url('../img/portfolio2.png') -20px 0 no-repeat
+				background-size: cover
+				@media screen and (max-width: 767px)
+					background-position: 0 0 
+			&:nth-child(3)
+				background: url('../img/portfolio3.png') -20px 0 no-repeat
+				background-size: cover
+				@media screen and (max-width: 767px)
+					background-position: 0 0
+			&:nth-child(4)
+				background: url('../img/portfolio4.png') 0 0 no-repeat
+				background-size: cover
+			&:nth-child(5)
+				background: url('../img/portfolio5.png') -30px -15px no-repeat
+				background-size: 120%
+				@media screen and (max-width: 1199px)
+					background-position: 0 0
+					background-size: cover
+			&:nth-child(6)
+				background: url('../img/portfolio6.png') 0 -110px no-repeat
+				background-size: cover
+				@media screen and (max-width: 1199px)
+					background-position: 0 -50px
+				@media screen and (max-width: 767px)
+					background-position: 0 0
+			&__title
+				+rb(#fff, 18px)
+				text-transform: uppercase
+				z-index: 4
+				position: relative
+				display: none
+				opacity: 0
+				transition: .3s
+				@media screen and (max-width: 991px)
+					+rb(#fff, 14px)
+			&__plus
+				color: #fff
+				font-size: 60px
+				margin-left: calc(50% - 20px)
+				position: relative
+				z-index: 4
+				display: none
+				opacity: 0
+				transition: .3s
+				@media screen and (max-width: 991px)
+					font-size: 40px
+	&__btn
+		background: $red
+		+rl(#fff, 18px)
+		padding: 5px 15px
+		margin-left: calc(50% - 96px)
+		margin-bottom: 30px
+		&:focus, &:active, &:active:focus
+			outline: none
+			box-shadow: none
+		&:hover
+			background: $lred
+			color: #fff
+	&__arrow
+		margin-bottom: 30px
+	&__img
+		position: absolute
+		top: 555px
+		left: 60%
+		@media screen and (max-width: 991px)
+			top: 455px
+			left: 64%
+		@media screen and (max-width: 767px)
+			top: 585px
+			left: 67%
+		@media screen and (max-width: 575px)
+			top: 585px
+			left: 73%
+		@media screen and (max-width: 470px)
+			display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
