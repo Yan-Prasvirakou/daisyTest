@@ -218,6 +218,7 @@ body {
 }
 
 .header__btn {
+  background: transparent;
   border: 2px solid #fc645f;
   font-family: 'Raleway Light', sans-serif;
   color: #fc645f;
@@ -502,6 +503,7 @@ body {
 
 .expand__btn {
   border: 2px solid #fc645f;
+  background: transparent;
   font-family: 'Raleway Light', sans-serif;
   color: #fc645f;
   font-size: 20px;
